@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pax Quanta</title>
+<meta name="description" content="Pax quanta — how great a peace.">
+<meta property="og:title" content="Pax Quanta">
+<meta property="og:description" content="Pax quanta — how great a peace.">
+<meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#161411" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='7' fill='%23927f5e'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://use.typekit.net" crossorigin>
+<link rel="stylesheet" href="https://use.typekit.net/yto6gfu.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #f4f1ea;
+    --ink: #1e1b16;
+    --quiet: #8b8272;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161411;
+      --ink: #e9e3d5;
+      --quiet: #7d7462;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "EB Garamond", Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1.5rem;
+    animation: appear 1.4s ease-out both;
+  }
+  h1 {
+    font-family: "trajan-pro-3", "Cinzel", "Times New Roman", serif;
+    font-weight: 400;
+    font-size: clamp(2.1rem, 8.5vw, 5.25rem);
+    letter-spacing: 0.18em;
+    margin-right: -0.18em; /* rebalance trailing tracking */
+    line-height: 1.15;
+    white-space: nowrap;
+  }
+  h1 .dot {
+    font-size: 1.1em;
+    padding: 0 0.06em;
+  }
+  .gloss {
+    font-style: italic;
+    font-size: clamp(1.05rem, 2.4vw, 1.3rem);
+    color: var(--quiet);
+    margin-top: 2.75rem;
+    letter-spacing: 0.02em;
+  }
+  footer {
+    font-family: "trajan-pro-3", "Cinzel", "Times New Roman", serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.32em;
+    margin-right: -0.32em;
+    color: var(--quiet);
+    padding: 0 1.5rem 2.75rem;
+  }
+  @keyframes appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    main { animation: none; }
+  }
+  ::selection { background: var(--quiet); color: var(--bg); }
+</style>
+</head>
+<body>
+  <main>
+    <h1 lang="la">PAX<span class="dot">·</span>QUANTA</h1>
+    <p class="gloss">how great a peace</p>
+  </main>
+  <footer>MMXXVI</footer>
+</body>
+</html>
